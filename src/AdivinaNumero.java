@@ -38,8 +38,5 @@ public class AdivinaNumero {
             }
         }
         System.out.println("Has acertado en " + intentos + " intentos.");
-
-
-
     }
 }
