@@ -2,7 +2,33 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class AdivinaNumero {
+
+    public static int preguntarNumero(Scanner lector) {
+        return lector.nextInt();
+    }
+
+    public static int sumar(int numero1, int numero2) {
+        System.out.println("Vamos a sumar los números " + numero1 + " y " + numero2);
+        numero1 = 0;
+        return numero1+numero2;
+    }
+
+    public static int imprimirSuma(int numero1, int numero2) {
+        int resultado = (numero1+numero2);
+        System.out.println("El resultado es " + resultado);
+        if (resultado>0) {
+            System.out.println("El resultado es positivo");
+            return resultado;
+        } else {
+            System.out.println("El resultado no es positivo");
+            return resultado;
+        }
+    }
     public static void main (String[] args) {
+
+       int x = imprimirSuma(1,5);
+}
+    public static void main2 (String[] args) {
 /*        Genera un número aleatorio del 1 al 10.
         Pide al usuario que lo adivine usando un bucle while.
         Si el número es mayor o menor, muestra una pista con un if.
